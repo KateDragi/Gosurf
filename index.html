@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Gosurf</title>
+</head>
+
+<body>
+    <div class="wrapper">
+<header class="header">
+    <div class="header__logo"><a href="#"><img class="header__logo-img" src="img/main/first-logo.png" alt="logo"></a></div>
+    <nav class="header__menu menu">
+        <ul class="menu__list">
+            <li class="menu__item">
+                <a href="#" class="menu__link">
+                    <div class="menu__icon-block">
+                        <div class="menu__image menu__image_1"><img src="img/main/main-surf.svg" alt="surf"></div>
+                        <div class="menu__text">Surf</div>
+                    </div>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">
+                    <div class="menu__icon-block">
+                        <div class="menu__image menu__image_2"><img src="img/main/main-travel.svg" alt="travel"></div>
+                        <div class="menu__text">Travel</div>
+                    </div>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">
+                    <div class="menu__icon-block">
+                        <div class="menu__image menu__image_3"><img src="img/main/main-camp.svg" alt="camp"></div>
+                        <div class="menu__text">Sleep</div>
+                    </div>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a href="#" class="menu__link">
+                    <div class="menu__icon-block">
+                        <div class="menu__image menu__image_4"><img src="img/main/main-board.svg" alt="shop"></div>
+                        <div class="menu__text">Shop</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="header__search">
+        <button class="header__btn"><img src="img/icons/search.svg" alt="search"></button>
+        <form action="#" method="post" class="header__form">
+            <input type="text" class="header__input" placeholder="Поиск">
+        </form>
+    </div>
+    <div class="header__date">
+        <div class="header__number">20</div>
+        <div class="header__date-line">
+            <div class="header__month">06</div>
+            <div class="header__line">|</div>
+            <div class="header__year">2018</div>
+        </div>
+    </div>
+    <div class="header__location">
+        <div class="header__locate"><img src="img/icons/location.svg" alt="location"></div>
+        <div class="header__place">California</div>
+    </div>
+</header>
+    
+    <main>
+        <div class="page">
+            <div class="page__main main-page">
+                <div class="main-page__map map-surf map-surf__slide-2">
+                    <div class="map-surf__surf-path">
+                        <svg class="map-surf__svg map-surf__svg_1" width="366" height="205" viewBox="0 0 366 205" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M364.749 1.24684C335.118 20.5501 347.403 45.7285 349.33 75.6225C349.902 84.4806 343.562 93.2059 334.533 94.2691C315.117 96.5554 287.808 48.1523 278.719 64.5592C269.332 81.5043 286.463 129.769 286.843 132.428C290.18 155.773 268.939 190.895 247.494 202.201C232.236 210.245 200.697 177.77 193.045 164.759C142.932 79.5549 172.735 109.048 98.7292 35.1682C93.0639 29.5125 86.8492 23.9283 79.2385 21.1707C71.3992 18.3304 64.5283 27.1962 62.7607 33.5692C56.9034 54.6885 65.8794 105.856 41.0463 119.715C33.4267 123.967 24.3101 123.161 16.6118 127.227C10.5816 130.412 6.1456 136.35 0.912503 140.911" stroke="white" stroke-width="2"/>
+                        </svg>
+                        <svg class="map-surf__svg map-surf__svg_2" width="205" height="236" viewBox="0 0 205 236" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M172.114 0.939392C163.546 24.3208 183.614 32.5255 199.675 47.8074C204.434 52.3357 204.888 59.817 199.879 64.3424C189.107 74.0738 148.264 59.9168 150.854 72.7451C153.53 85.9943 188.061 104.531 189.618 105.799C203.284 116.932 207.735 145.174 200.208 160.658C194.852 171.676 159.342 167.962 148.172 164.293C75.024 140.266 107.985 143.131 25.8167 135.67C19.5265 135.099 12.9349 134.806 6.89385 136.65C0.671419 138.549 0.869364 146.339 2.95714 150.55C9.87574 164.506 40.8489 188.178 32.5138 206.523C29.9563 212.152 23.963 215.707 21.2644 221.27C19.1505 225.627 19.3849 230.772 18.4452 235.523" stroke="white" stroke-width="2"/>
+                        </svg>
+                        <svg class="map-surf__svg map-surf__svg_3" width="174" height="274" viewBox="0 0 174 274" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M107.988 0.536373C106.779 26.3321 125.596 30.631 142.868 43.029C147.987 46.7027 150.265 54.2983 147.236 59.9812C140.725 72.2018 103.074 66.0645 108.491 78.7155C114.086 91.7815 147.586 103.721 149.206 104.703C163.428 113.329 174.31 141.439 171.965 158.904C170.296 171.331 139.743 174.829 129.498 173.359C62.403 163.731 90.6149 159.887 20.2049 169.143C14.8148 169.852 9.24422 170.909 4.67503 174.049C-0.0313818 177.282 2.11139 185.247 4.92148 189.146C14.2338 202.064 46.0706 220.013 43.778 240.585C43.0745 246.897 38.9797 251.785 38.1418 258.058C37.4854 262.972 38.987 268.211 39.4097 273.288" stroke="white" stroke-width="2"/>
+                        </svg>
+                        <svg class="map-surf__svg map-surf__svg_4" width="192" height="382" viewBox="0 0 192 382" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M122.695 1.07312C116.33 36.2747 93.5379 39.5901 70.0782 54.1137C63.1268 58.4173 58.2431 68.4292 59.997 76.5547C63.7687 94.028 108.635 90.7422 98.6464 107.2C88.33 124.198 46.4653 135.921 44.3193 137.039C25.4775 146.848 4.60272 183.572 2.03881 207.61C0.214504 224.713 34.0768 233.563 46.2258 232.94C125.785 228.863 94.7018 219.856 172.38 241.875C178.326 243.561 184.374 245.745 188.653 250.622C193.06 255.645 188.22 266.177 183.838 271.095C169.318 287.394 127.549 307.505 123.993 335.755C122.901 344.423 126.113 351.613 125.187 360.246C124.461 367.009 121.172 373.924 119.165 380.763" stroke="white" stroke-width="2"/>
+                        </svg>                                     
+                    </div>
+                    <div class="map-surf__map">
+                        <img src="img/main/main-map.svg" alt="">
+                    </div>
+                    <div class="map-surf__navigation">
+                        <button class="map-surf__arrow-prev"><img src="img/icons/arrow.svg" alt=""></button>
+                        <button class="map-surf__arrow-next"><img src="img/icons/arrow.svg" alt=""></button>
+                    </div>
+                    <div class="map-surf__current">Current Location</div>
+                    <div class="map-surf__point map-surf__point_current"></div>
+                    <div class="map-surf__point map-surf__point_first"></div>
+                    <div class="map-surf__point map-surf__point_second"></div>
+                    <div class="map-surf__point map-surf__point_third"></div>
+                    <div class="map-surf__point map-surf__point_fourth"></div>
+                    <div class="map-surf__goal map-surf__goal_1">West Shore | Malibu, CA</div>
+                    <div class="map-surf__goal map-surf__goal_2">North Shore | Malibu, CA</div>
+                    <div class="map-surf__goal map-surf__goal_3">East Shore | Malibu, CA</div>
+                    <div class="map-surf__goal map-surf__goal_4">South Shore | Malibu, CA</div>
+                </div>
+                <div class="main-page__surf"><img src="img/main/logo-title.png" alt=""></div>
+                <div class="main-page__slider swiper">
+                    <div class="main-page__wrapper swiper-wrapper">
+                        <div class="main-page__slide swiper-slide">
+                            <div class="main-page__title-block">
+                                <div class="main-page__surf-place declaration-block">
+                                    <div class="declaration-block__declare declaration-block__declare_main">Surf</div>
+                                    <div class="declaration-block__title declaration-block__title_main">North Shore</div>
+                                </div> 
+                                <div class="main-page__surf-condition declaration-block">
+                                    <div class="declaration-block__declare">Condition</div>
+                                    <div class="declaration-block__title">Radical</div>
+                                </div>
+                                <button class="main-page__arrow"><img src="img/icons/arrow.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="main-page__slide swiper-slide">
+                            <div class="main-page__title-block">
+                                <div class="main-page__surf-place declaration-block">
+                                    <div class="declaration-block__declare">Surf</div>
+                                    <div class="declaration-block__title declaration-block__title_main">South Shore</div>
+                                </div> 
+                                <div class="main-page__surf-condition declaration-block">
+                                    <div class="declaration-block__declare">Condition</div>
+                                    <div class="declaration-block__title">Radical</div>
+                                </div>
+                                <button class="main-page__arrow"><img src="img/icons/arrow.svg" alt=""></button>
+                            </div>
+                        </div>
+                        
+                        <div class="main-page__slide swiper-slide">
+                            <div class="main-page__title-block">
+                                <div class="main-page__surf-place declaration-block">
+                                    <div class="declaration-block__declare">Surf</div>
+                                    <div class="declaration-block__title declaration-block__title_main">West Shore</div>
+                                </div> 
+                                <div class="main-page__surf-condition declaration-block">
+                                    <div class="declaration-block__declare">Condition</div>
+                                    <div class="declaration-block__title">Radical</div>
+                                </div>
+                                <button class="main-page__arrow"><img src="img/icons/arrow.svg" alt=""></button>
+                            </div>
+                        </div>
+                        
+                        <div class="main-page__slide swiper-slide">
+                            <div class="main-page__title-block">
+                                <div class="main-page__surf-place declaration-block">
+                                    <div class="declaration-block__declare">Surf</div>
+                                    <div class="declaration-block__title declaration-block__title_main">East Shore</div>
+                                </div> 
+                                <div class="main-page__surf-condition declaration-block">
+                                    <div class="declaration-block__declare">Condition</div>
+                                    <div class="declaration-block__title">Radical</div>
+                                </div>
+                                <button class="main-page__arrow"><img src="img/icons/arrow.svg" alt=""></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="main-page__dots">
+                        <div class="main-page__line">
+                            <div class="main-page__dot-block main-page__dot-block_1 block-dot">
+                                <div class="block-dot__bullet"></div>
+                                <div class="block-dot__number">01</div>
+                                <div class="block-dot__name">North Shore</div>
+                            </div>
+                            <div class="main-page__dot-block main-page__dot-block_2 block-dot">
+                                <div class="block-dot__bullet"></div>
+                                <div class="block-dot__number">02</div>
+                                <div class="block-dot__name">South Shore</div>
+                            </div>
+                        </div>
+                        <div class="main-page__line">
+                            <div class="main-page__dot-block main-page__dot-block_3 block-dot">
+                                <div class="block-dot__bullet"></div>
+                                <div class="block-dot__number">03</div>
+                                <div class="block-dot__name">West Shore </div>
+                            </div>
+                            <div class="main-page__dot-block main-page__dot-block_4 block-dot">
+                                <div class="block-dot__bullet"></div>
+                                <div class="block-dot__number">04</div>
+                                <div class="block-dot__name">East Shore</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="main-page__down-arrows"><button class="main-page__down-arrows"><img src="img/icons/down-arrows.svg" alt=""></button></div> 
+            </div>
+            <div class="page__surf surf-page">
+                <div class="surf-page__world">
+                    <div class="surf-page__title">Surf</div>
+                    <div class="surf-page__surf-text"><img src="img/surf/Surf.png" alt=""></div>
+                    <div class="surf-page__declare declaration-block">
+                            <div class="declaration-block__declare">Current location</div>
+                            <div class="declaration-block__title">California <span class="vertical-line">|</span> USA</div>
+                    </div>
+                    <div class="surf-page__poi"><img src="img/surf/POI.svg" alt=""></div>
+                    <div class="surf-page__map">
+                            <div class="surf-page__circle surf-page__circle_1">
+                                    <div class="surf-page__active-menu menu-active" @@secattribute data-da='.menu-slider__wrapper, 1199.98, first' >
+        <div class="menu-active__title-link" data-spoller>
+            <div class="menu-active__title">Airlie Beach</div>
+            <a class="menu-active__arrow" href="#"><img src="img/icons/menu-arrow.svg" alt=""></a>
+        </div>
+        <div class="menu-active__place">Australia</div>
+        <div class="menu-active__conditions">
+            <div class="menu-active__surf">
+                <div class="menu-active__image"><img src="img/surf/surf.svg" alt=""></div>
+                <div class="menu-active__numbers">9 - 13</div>
+                <div class="menu-active__text">Surf (FT)</div>
+            </div>
+            <div class="menu-active__drop">
+                <div class="menu-active__image"><img src="img/surf/water.svg" alt=""></div>
+                <div class="menu-active__numbers">+2.3</div>
+                <div class="menu-active__text">Tide (FT)</div>
+            </div>
+            <div class="menu-active__wind">
+                <div class="menu-active__image"><img src="img/surf/wind.svg" alt=""></div>
+                <div class="menu-active__numbers">4 SE</div>
+                <div class="menu-active__text">Wind (KTS)</div>
+            </div>
+        </div>
+    </div>
+
+                            </div>
+                            <div class="surf-page__circle surf-page__circle_2">
+                                    <div class="surf-page__active-menu menu-active" @@secattribute data-da='.menu-slider__wrapper, 1199.98, first' >
+        <div class="menu-active__title-link" data-spoller>
+            <div class="menu-active__title">Airlie Beach</div>
+            <a class="menu-active__arrow" href="#"><img src="img/icons/menu-arrow.svg" alt=""></a>
+        </div>
+        <div class="menu-active__place">Australia</div>
+        <div class="menu-active__conditions">
+            <div class="menu-active__surf">
+                <div class="menu-active__image"><img src="img/surf/surf.svg" alt=""></div>
+                <div class="menu-active__numbers">9 - 13</div>
+                <div class="menu-active__text">Surf (FT)</div>
+            </div>
+            <div class="menu-active__drop">
+                <div class="menu-active__image"><img src="img/surf/water.svg" alt=""></div>
+                <div class="menu-active__numbers">+2.3</div>
+                <div class="menu-active__text">Tide (FT)</div>
+            </div>
+            <div class="menu-active__wind">
+                <div class="menu-active__image"><img src="img/surf/wind.svg" alt=""></div>
+                <div class="menu-active__numbers">4 SE</div>
+                <div class="menu-active__text">Wind (KTS)</div>
+            </div>
+        </div>
+    </div>
+
+                            </div>
+                            <div class="surf-page__circle surf-page__circle_3">
+                                    <div class="surf-page__active-menu menu-active" @@secattribute data-da='.menu-slider__wrapper, 1199.98, first' >
+        <div class="menu-active__title-link" data-spoller>
+            <div class="menu-active__title">Airlie Beach</div>
+            <a class="menu-active__arrow" href="#"><img src="img/icons/menu-arrow.svg" alt=""></a>
+        </div>
+        <div class="menu-active__place">Australia</div>
+        <div class="menu-active__conditions">
+            <div class="menu-active__surf">
+                <div class="menu-active__image"><img src="img/surf/surf.svg" alt=""></div>
+                <div class="menu-active__numbers">9 - 13</div>
+                <div class="menu-active__text">Surf (FT)</div>
+            </div>
+            <div class="menu-active__drop">
+                <div class="menu-active__image"><img src="img/surf/water.svg" alt=""></div>
+                <div class="menu-active__numbers">+2.3</div>
+                <div class="menu-active__text">Tide (FT)</div>
+            </div>
+            <div class="menu-active__wind">
+                <div class="menu-active__image"><img src="img/surf/wind.svg" alt=""></div>
+                <div class="menu-active__numbers">4 SE</div>
+                <div class="menu-active__text">Wind (KTS)</div>
+            </div>
+        </div>
+    </div>
+
+                            </div>
+                            <div class="surf-page__circle surf-page__circle_4">
+                                    <div class="surf-page__active-menu menu-active" @@secattribute data-da='.menu-slider__wrapper, 1199.98, first' >
+        <div class="menu-active__title-link" data-spoller>
+            <div class="menu-active__title">Airlie Beach</div>
+            <a class="menu-active__arrow" href="#"><img src="img/icons/menu-arrow.svg" alt=""></a>
+        </div>
+        <div class="menu-active__place">Australia</div>
+        <div class="menu-active__conditions">
+            <div class="menu-active__surf">
+                <div class="menu-active__image"><img src="img/surf/surf.svg" alt=""></div>
+                <div class="menu-active__numbers">9 - 13</div>
+                <div class="menu-active__text">Surf (FT)</div>
+            </div>
+            <div class="menu-active__drop">
+                <div class="menu-active__image"><img src="img/surf/water.svg" alt=""></div>
+                <div class="menu-active__numbers">+2.3</div>
+                <div class="menu-active__text">Tide (FT)</div>
+            </div>
+            <div class="menu-active__wind">
+                <div class="menu-active__image"><img src="img/surf/wind.svg" alt=""></div>
+                <div class="menu-active__numbers">4 SE</div>
+                <div class="menu-active__text">Wind (KTS)</div>
+            </div>
+        </div>
+    </div>
+
+                            </div>
+                            <div class="surf-page__circle surf-page__circle_5">
+                                    <div class="surf-page__active-menu menu-active" @@secattribute data-da='.menu-slider__wrapper, 1199.98, first' >
+        <div class="menu-active__title-link" data-spoller>
+            <div class="menu-active__title">Airlie Beach</div>
+            <a class="menu-active__arrow" href="#"><img src="img/icons/menu-arrow.svg" alt=""></a>
+        </div>
+        <div class="menu-active__place">Australia</div>
+        <div class="menu-active__conditions">
+            <div class="menu-active__surf">
+                <div class="menu-active__image"><img src="img/surf/surf.svg" alt=""></div>
+                <div class="menu-active__numbers">9 - 13</div>
+                <div class="menu-active__text">Surf (FT)</div>
+            </div>
+            <div class="menu-active__drop">
+                <div class="menu-active__image"><img src="img/surf/water.svg" alt=""></div>
+                <div class="menu-active__numbers">+2.3</div>
+                <div class="menu-active__text">Tide (FT)</div>
+            </div>
+            <div class="menu-active__wind">
+                <div class="menu-active__image"><img src="img/surf/wind.svg" alt=""></div>
+                <div class="menu-active__numbers">4 SE</div>
+                <div class="menu-active__text">Wind (KTS)</div>
+            </div>
+        </div>
+    </div>
+
+                            </div>
+                            <div class="surf-page__circle surf-page__circle_6">
+                                    <div class="surf-page__active-menu menu-active" @@secattribute data-da='.menu-slider__wrapper, 1199.98, first' >
+        <div class="menu-active__title-link" data-spoller>
+            <div class="menu-active__title">Airlie Beach</div>
+            <a class="menu-active__arrow" href="#"><img src="img/icons/menu-arrow.svg" alt=""></a>
+        </div>
+        <div class="menu-active__place">Australia</div>
+        <div class="menu-active__conditions">
+            <div class="menu-active__surf">
+                <div class="menu-active__image"><img src="img/surf/surf.svg" alt=""></div>
+                <div class="menu-active__numbers">9 - 13</div>
+                <div class="menu-active__text">Surf (FT)</div>
+            </div>
+            <div class="menu-active__drop">
+                <div class="menu-active__image"><img src="img/surf/water.svg" alt=""></div>
+                <div class="menu-active__numbers">+2.3</div>
+                <div class="menu-active__text">Tide (FT)</div>
+            </div>
+            <div class="menu-active__wind">
+                <div class="menu-active__image"><img src="img/surf/wind.svg" alt=""></div>
+                <div class="menu-active__numbers">4 SE</div>
+                <div class="menu-active__text">Wind (KTS)</div>
+            </div>
+        </div>
+    </div>
+
+                            </div>
+                            <div class="surf-page__circle surf-page__circle_7 surf-page__circle-active">
+                                    <div class="surf-page__active-menu menu-active" @@secattribute data-da='.menu-slider__wrapper, 1199.98, first' >
+        <div class="menu-active__title-link" data-spoller>
+            <div class="menu-active__title">Airlie Beach</div>
+            <a class="menu-active__arrow" href="#"><img src="img/icons/menu-arrow.svg" alt=""></a>
+        </div>
+        <div class="menu-active__place">Australia</div>
+        <div class="menu-active__conditions">
+            <div class="menu-active__surf">
+                <div class="menu-active__image"><img src="img/surf/surf.svg" alt=""></div>
+                <div class="menu-active__numbers">9 - 13</div>
+                <div class="menu-active__text">Surf (FT)</div>
+            </div>
+            <div class="menu-active__drop">
+                <div class="menu-active__image"><img src="img/surf/water.svg" alt=""></div>
+                <div class="menu-active__numbers">+2.3</div>
+                <div class="menu-active__text">Tide (FT)</div>
+            </div>
+            <div class="menu-active__wind">
+                <div class="menu-active__image"><img src="img/surf/wind.svg" alt=""></div>
+                <div class="menu-active__numbers">4 SE</div>
+                <div class="menu-active__text">Wind (KTS)</div>
+            </div>
+        </div>
+    </div>
+
+                            </div>
+                            <div class="surf-page__circle surf-page__circle_8">
+                                    <div class="surf-page__active-menu menu-active" @@secattribute data-da='.menu-slider__wrapper, 1199.98, first' >
+        <div class="menu-active__title-link" data-spoller>
+            <div class="menu-active__title">Airlie Beach</div>
+            <a class="menu-active__arrow" href="#"><img src="img/icons/menu-arrow.svg" alt=""></a>
+        </div>
+        <div class="menu-active__place">Australia</div>
+        <div class="menu-active__conditions">
+            <div class="menu-active__surf">
+                <div class="menu-active__image"><img src="img/surf/surf.svg" alt=""></div>
+                <div class="menu-active__numbers">9 - 13</div>
+                <div class="menu-active__text">Surf (FT)</div>
+            </div>
+            <div class="menu-active__drop">
+                <div class="menu-active__image"><img src="img/surf/water.svg" alt=""></div>
+                <div class="menu-active__numbers">+2.3</div>
+                <div class="menu-active__text">Tide (FT)</div>
+            </div>
+            <div class="menu-active__wind">
+                <div class="menu-active__image"><img src="img/surf/wind.svg" alt=""></div>
+                <div class="menu-active__numbers">4 SE</div>
+                <div class="menu-active__text">Wind (KTS)</div>
+            </div>
+        </div>
+    </div>
+
+                            </div>
+                            <div class="surf-page__location"><img src="img/icons/location.svg" alt=""></div>
+                            <div class="surf-page__side-text">34.0501° N -118.2446° W</div>
+                            <div class="surf-page__grid-slider menu-slider">
+                                <div class="menu-slider__wrapper">
+                                    <div class="menu-slider__slide"></div>
+                                </div>
+                                <div class="menu-slider__dots"></div>
+                            </div>
+                    </div>
+                </div>
+                <div class="surf-page__slider swiper">
+                    <div class="surf-page__navigation">
+                        <button class="surf-page__prev-btn">
+                            <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.77789 0.562669L0.564298 8.71345C-0.188099 9.46459 -0.188099 10.6838 0.564298 11.4324L8.77789 19.5881C9.5366 20.3392 10.7646 20.3354 11.5233 19.5881C12.2744 18.8357 12.2744 17.6215 11.5233 16.8691L6.71818 12.1016H22.1324C23.2459 12.1016 24.1467 11.202 24.1467 10.0885C24.1467 8.97625 23.2459 8.07537 22.1324 8.07537H6.68919L11.5233 3.28282C12.2744 2.53168 12.2744 1.31623 11.5233 0.565085C10.7658 -0.187313 9.53783 -0.188569 8.77789 0.562568V0.562669Z" fill="white"/>
+                            </svg>
+                            </button>
+                        <button class="surf-page__next-btn">
+                            <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.77789 0.562669L0.564298 8.71345C-0.188099 9.46459 -0.188099 10.6838 0.564298 11.4324L8.77789 19.5881C9.5366 20.3392 10.7646 20.3354 11.5233 19.5881C12.2744 18.8357 12.2744 17.6215 11.5233 16.8691L6.71818 12.1016H22.1324C23.2459 12.1016 24.1467 11.202 24.1467 10.0885C24.1467 8.97625 23.2459 8.07537 22.1324 8.07537H6.68919L11.5233 3.28282C12.2744 2.53168 12.2744 1.31623 11.5233 0.565085C10.7658 -0.187313 9.53783 -0.188569 8.77789 0.562568V0.562669Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="surf-page__wrapper swiper-wrapper">
+                        <div class="surf-page__slide surf-page__slide_1 swiper-slide surf-slide">
+                            <div class="surf-slide__content">
+                                <div class="surf-slide__content-block surf-slide__content-block_1">
+                                    <div class="surf-slide__title">Malibu Beach</div>
+                                    <div class="surf-slide__place">California <span class="vertical-line">|</span> USA</div>
+                                    <button class="surf-slide__btn"><img src="img/surf/button.png" alt=""></button>
+                                </div>
+                                <div class="surf-slide__content-block surf-slide__content-block_2">
+                                    <div class="surf-slide__title">Airlie Beach</div>
+                                    <div class="surf-slide__place">Queensland <span class="vertical-line">|</span> Australia</div>
+                                    <button class="surf-slide__btn"><img src="img/surf/button.png" alt=""></button>
+                                </div>
+                                <div class="surf-slide__content-block surf-slide__content-block_3">
+                                    <div class="surf-slide__title">Cloud Nine</div>
+                                    <div class="surf-slide__place">Siargao <span class="vertical-line">|</span> Philippines</div>
+                                    <button class="surf-slide__btn"><img src="img/surf/button.png" alt=""></button>
+                                </div>
+                                <div class="surf-slide__content-block surf-slide__content-block_4">
+                                    <div class="surf-slide__title">Vieux Boucau</div>
+                                    <div class="surf-slide__place">Hossegor <span class="vertical-line" class="vertical-line">|</span> France</div>
+                                    <button class="surf-slide__btn"><img src="img/surf/button.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="surf-page__slide surf-page__slide_1 swiper-slide surf-slide">
+                            <div class="surf-slide__content">
+                                <div class="surf-slide__content-block surf-slide__content-block_1">
+                                    <div class="surf-slide__title">Malibu Beach</div>
+                                    <div class="surf-slide__place">California <span class="vertical-line">|</span> USA</div>
+                                    <button class="surf-slide__btn"><img src="img/surf/button.png" alt=""></button>
+                                </div>
+                                <div class="surf-slide__content-block surf-slide__content-block_2">
+                                    <div class="surf-slide__title">Airlie Beach</div>
+                                    <div class="surf-slide__place">Queensland <span class="vertical-line">|</span> Australia</div>
+                                    <button class="surf-slide__btn"><img src="img/surf/button.png" alt=""></button>
+                                </div>
+                                <div class="surf-slide__content-block surf-slide__content-block_3">
+                                    <div class="surf-slide__title">Cloud Nine</div>
+                                    <div class="surf-slide__place">Siargao <span class="vertical-line">|</span> Philippines</div>
+                                    <button class="surf-slide__btn"><img src="img/surf/button.png" alt=""></button>
+                                </div>
+                                <div class="surf-slide__content-block surf-slide__content-block_4">
+                                    <div class="surf-slide__title">Vieux Boucau</div>
+                                    <div class="surf-slide__place">Hossegor <span class="vertical-line" class="vertical-line">|</span> France</div>
+                                    <button class="surf-slide__btn"><img src="img/surf/button.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>                            
+                    </div>
+                </div>
+            </div>
+            <div class="page__travel travel-page">
+                <div class="travel-page__title">Travel</div>
+                <div class="travel-page__travel-text"><img src="img/icons/travel.png" alt=""></div>
+                <div class="travel-page__slider swiper">
+                    <div class="travel-page__wrapper swiper-wrapper">
+                        <div class="travel-page__slide travel-page__slide_1 swiper-slide travel-slide">
+                            <div class="travel-slide__declare declaration-block">
+                                <div class="declaration-block__declare">Shore</div>
+                                <div class="declaration-block__title">Airlie Beach <span class="vertical-line">|</span> Australia</div>
+                            </div>
+                            <div class="travel-slide__australian australian-block">
+                                <div class="australian-block__declare declaration-block declaration-block_australian">
+                                    <div class="declaration-block__declare">Airline</div>
+                                    <div class="declaration-block__title">Virgin Australia</div>
+                                    <div class="australian-block__plane"><img src="img/travel/airplane.png" alt=""></div>
+                                </div>
+                                <div class="australian-block__details details-block">
+                                    <div class="details-block__item">
+                                        <div class="details-block__declare">Destination</div>
+                                        <div class="details-block__answer">Queensland Australia</div>
+                                    </div>
+                                    <div class="details-block__item">
+                                        <div class="details-block__declare">Distance</div>
+                                        <div class="details-block__answer">7,065 Miles</div>
+                                    </div>
+                                    <div class="details-block__item">
+                                        <div class="details-block__declare">Travel Time</div>
+                                        <div class="details-block__answer"><div>23 Hours</div><div>5 Minutes</div></div>
+                                    </div>
+                                    <div class="details-block__item">
+                                        <div class="details-block__declare">Pricing</div>
+                                        <div class="details-block__answer-block">
+                                            <div class="details-block__answer">$1,976 USD</div>
+                                            <div class="details-block__small-answer">Round Trip</div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <button class="australian-block__btn"><img src="img/travel/btn.png" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="travel-page__slide travel-page__slide_2 swiper-slide travel-slide">
+                            <div class="travel-slide__declare declaration-block">
+                                <div class="declaration-block__declare">Shore</div>
+                                <div class="declaration-block__title">Airlie Beach <span class="vertical-line">|</span> Australia</div>
+                            </div>
+                            <div class="travel-slide__australian australian-block">
+                                <div class="australian-block__declare declaration-block declaration-block_australian">
+                                    <div class="declaration-block__declare">Airline</div>
+                                    <div class="declaration-block__title">Virgin Australia</div>
+                                    <div class="australian-block__plane"><img src="img/travel/airplane.png" alt=""></div>
+                                </div>
+                                <div class="australian-block__details details-block">
+                                    <div class="details-block__item">
+                                        <div class="details-block__declare">Destination</div>
+                                        <div class="details-block__answer">Queensland Australia</div>
+                                    </div>
+                                    <div class="details-block__item">
+                                        <div class="details-block__declare">Distance</div>
+                                        <div class="details-block__answer">7,065 Miles</div>
+                                    </div>
+                                    <div class="details-block__item">
+                                        <div class="details-block__declare">Travel Time</div>
+                                        <div class="details-block__answer"><div>23 Hours</div><div>5 Minutes</div></div>
+                                    </div>
+                                    <div class="details-block__item">
+                                        <div class="details-block__declare">Pricing</div>
+                                        <div class="details-block__answer-block">
+                                            <div class="details-block__answer">$1,976 USD</div>
+                                            <div class="details-block__small-answer">Round Trip</div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <button class="australian-block__btn"><img src="img/travel/btn.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="travel-page__navigation">
+                        <button class="travel-page__prev-btn"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.77789 0.562669L0.564298 8.71345C-0.188099 9.46459 -0.188099 10.6838 0.564298 11.4324L8.77789 19.5881C9.5366 20.3392 10.7646 20.3354 11.5233 19.5881C12.2744 18.8357 12.2744 17.6215 11.5233 16.8691L6.71818 12.1016H22.1324C23.2459 12.1016 24.1467 11.202 24.1467 10.0885C24.1467 8.97625 23.2459 8.07537 22.1324 8.07537H6.68919L11.5233 3.28282C12.2744 2.53168 12.2744 1.31623 11.5233 0.565085C10.7658 -0.187313 9.53783 -0.188569 8.77789 0.562568V0.562669Z" fill="white"/>
+                            </svg>
+                            </button>
+                        <button class="travel-page__next-btn"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.77789 0.562669L0.564298 8.71345C-0.188099 9.46459 -0.188099 10.6838 0.564298 11.4324L8.77789 19.5881C9.5366 20.3392 10.7646 20.3354 11.5233 19.5881C12.2744 18.8357 12.2744 17.6215 11.5233 16.8691L6.71818 12.1016H22.1324C23.2459 12.1016 24.1467 11.202 24.1467 10.0885C24.1467 8.97625 23.2459 8.07537 22.1324 8.07537H6.68919L11.5233 3.28282C12.2744 2.53168 12.2744 1.31623 11.5233 0.565085C10.7658 -0.187313 9.53783 -0.188569 8.77789 0.562568V0.562669Z" fill="white"/>
+                            </svg>
+                            </button>
+                    </div>
+                </div>
+                <div class="travel-page__cocktail"><img src="img/travel/cocktail.png" alt=""></div>
+            </div>
+            <div class="page__sleep sleep-page">
+                <div class="sleep-page__title">Sleep</div>
+                <div class="sleep-page__sleep-text"><img src="img/icons/sleep.png" alt=""></div>
+                <div class="sleep-page__slider swiper">
+                    <div class="sleep-page__wrapper swiper-wrapper">
+                        <div class="sleep-page__slide sleep-page__slide_1 swiper-slide sleep-slide">
+                            <div class="sleep-slide__declare declaration-block">
+                                <div class="declaration-block__declare">Resorts</div>
+                                <div class="declaration-block__title">Auberge <span class="vertical-line">|</span> Australia</div>
+                            </div>
+                            <div class="sleep-slide__rating rating-block">
+                                <div class="rating-block__declare declaration-block declaration-block_rating">
+                                    <div class="declaration-block__declare">Rating</div>
+                                    <div class="declaration-block__title-block">
+                                        <div class="declaration-block__title">Excellent</div>
+                                        <div class="declaration-block__rating">
+                                            <div class="declaration-block__star">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="#4AF6CD" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11 0L13.9225 6.97757L21.4616 7.60081L15.7287 12.5364L17.4656 19.8992L11 15.972L4.53436 19.8992L6.27135 12.5364L0.538379 7.60081L8.07753 6.97757L11 0Z" fill="#D9D9D9"/>
+                                                </svg>
+                                            </div>
+                                            <div class="declaration-block__star">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11 0L13.9225 6.97757L21.4616 7.60081L15.7287 12.5364L17.4656 19.8992L11 15.972L4.53436 19.8992L6.27135 12.5364L0.538379 7.60081L8.07753 6.97757L11 0Z" fill="#D9D9D9"/>
+                                                </svg>
+                                            </div>
+                                            <div class="declaration-block__star">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11 0L13.9225 6.97757L21.4616 7.60081L15.7287 12.5364L17.4656 19.8992L11 15.972L4.53436 19.8992L6.27135 12.5364L0.538379 7.60081L8.07753 6.97757L11 0Z" fill="#D9D9D9"/>
+                                                </svg>
+                                            </div>
+                                            <div class="declaration-block__star">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11 0L13.9225 6.97757L21.4616 7.60081L15.7287 12.5364L17.4656 19.8992L11 15.972L4.53436 19.8992L6.27135 12.5364L0.538379 7.60081L8.07753 6.97757L11 0Z" fill="#D9D9D9"/>
+                                                </svg>
+                                            </div>
+                                            <div class="declaration-block__star">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11 0L13.9225 6.97757L21.4616 7.60081L15.7287 12.5364L17.4656 19.8992L11 15.972L4.53436 19.8992L6.27135 12.5364L0.538379 7.60081L8.07753 6.97757L11 0Z" fill="#D9D9D9"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rating-block__details details-block details-block_rating">
+                                    <div class="details-block__item">
+                                        <div class="details-block__declare">Resort</div>
+                                        <div class="details-block__answer">Auberge Australia</div>
+                                    </div>
+                                    <div class="details-block__item details-block__item_rating">
+                                        <div class="details-block__declare"># of Nights</div>
+                                       <div class="details-block__answer-block">
+                                        <div class="details-block__answer">5 Nights</div>
+                                            <div class="details-block__buttons">
+                                                <div class="details-block__minus"><img src="img/icons/minus.svg" alt=""></div>
+                                                <div class="details-block__plus"><img src="img/icons/plus.svg" alt=""></div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    <div class="details-block__item details-block__item_rating">
+                                        <div class="details-block__declare"># of Guests</div>
+                                        <div class="details-block__answer-block">
+                                            <div class="details-block__answer">4 Guests</div>
+                                            <div class="details-block__buttons">
+                                                <div class="details-block__minus"><img src="img/icons/minus.svg" alt=""></div>
+                                                <div class="details-block__plus"><img src="img/icons/plus.svg" alt=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details-block__item">
+                                        <div class="details-block__declare">Pricing</div>
+                                        <div class="details-block__answer-block">
+                                            <div class="details-block__answer">$349 USD</div>
+                                            <div class="details-block__small-answer">Per Night</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="rating-block__btn"><img src="img/sleep/btn.png" alt=""></button>
+                            </div>
+                            
+                        </div>
+                        <div class="sleep-page__slide sleep-page__slide_2 swiper-slide sleep-slide">
+                            <div class="sleep-slide__declare declaration-block">
+                                <div class="declaration-block__declare">Resorts</div>
+                                <div class="declaration-block__title">Auberge <span class="vertical-line">|</span> Australia</div>
+                            </div>
+                            <div class="sleep-slide__rating rating-block">
+                                <div class="rating-block__declare declaration-block declaration-block_rating">
+                                    <div class="declaration-block__declare">Rating</div>
+                                    <div class="declaration-block__title-block">
+                                        <div class="declaration-block__title">Excellent</div>
+                                        <div class="declaration-block__rating">
+                                            <div class="declaration-block__star">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="#4AF6CD" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11 0L13.9225 6.97757L21.4616 7.60081L15.7287 12.5364L17.4656 19.8992L11 15.972L4.53436 19.8992L6.27135 12.5364L0.538379 7.60081L8.07753 6.97757L11 0Z" fill="#D9D9D9"/>
+                                                </svg>
+                                            </div>
+                                            <div class="declaration-block__star">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11 0L13.9225 6.97757L21.4616 7.60081L15.7287 12.5364L17.4656 19.8992L11 15.972L4.53436 19.8992L6.27135 12.5364L0.538379 7.60081L8.07753 6.97757L11 0Z" fill="#D9D9D9"/>
+                                                </svg>
+                                            </div>
+                                            <div class="declaration-block__star">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11 0L13.9225 6.97757L21.4616 7.60081L15.7287 12.5364L17.4656 19.8992L11 15.972L4.53436 19.8992L6.27135 12.5364L0.538379 7.60081L8.07753 6.97757L11 0Z" fill="#D9D9D9"/>
+                                                </svg>
+                                            </div>
+                                            <div class="declaration-block__star">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11 0L13.9225 6.97757L21.4616 7.60081L15.7287 12.5364L17.4656 19.8992L11 15.972L4.53436 19.8992L6.27135 12.5364L0.538379 7.60081L8.07753 6.97757L11 0Z" fill="#D9D9D9"/>
+                                                </svg>
+                                            </div>
+                                            <div class="declaration-block__star">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11 0L13.9225 6.97757L21.4616 7.60081L15.7287 12.5364L17.4656 19.8992L11 15.972L4.53436 19.8992L6.27135 12.5364L0.538379 7.60081L8.07753 6.97757L11 0Z" fill="#D9D9D9"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rating-block__details details-block details-block_rating">
+                                    <div class="details-block__item">
+                                        <div class="details-block__declare">Resort</div>
+                                        <div class="details-block__answer">Auberge Australia</div>
+                                    </div>
+                                    <div class="details-block__item details-block__item_rating">
+                                        <div class="details-block__declare"># of Nights</div>
+                                       <div class="details-block__answer-block">
+                                        <div class="details-block__answer">5 Nights</div>
+                                            <div class="details-block__buttons">
+                                                <div class="details-block__minus"><img src="img/icons/minus.svg" alt=""></div>
+                                                <div class="details-block__plus"><img src="img/icons/plus.svg" alt=""></div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    <div class="details-block__item details-block__item_rating">
+                                        <div class="details-block__declare"># of Guests</div>
+                                        <div class="details-block__answer-block">
+                                            <div class="details-block__answer">4 Guests</div>
+                                            <div class="details-block__buttons">
+                                                <div class="details-block__minus"><img src="img/icons/minus.svg" alt=""></div>
+                                                <div class="details-block__plus"><img src="img/icons/plus.svg" alt=""></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details-block__item">
+                                        <div class="details-block__declare">Pricing</div>
+                                        <div class="details-block__answer-block">
+                                            <div class="details-block__answer">$349 USD</div>
+                                            <div class="details-block__small-answer">Per Night</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="rating-block__btn"><img src="img/sleep/btn.png" alt=""></button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="sleep-page__navigation">
+                        <button class="sleep-page__prev-btn"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.77789 0.562669L0.564298 8.71345C-0.188099 9.46459 -0.188099 10.6838 0.564298 11.4324L8.77789 19.5881C9.5366 20.3392 10.7646 20.3354 11.5233 19.5881C12.2744 18.8357 12.2744 17.6215 11.5233 16.8691L6.71818 12.1016H22.1324C23.2459 12.1016 24.1467 11.202 24.1467 10.0885C24.1467 8.97625 23.2459 8.07537 22.1324 8.07537H6.68919L11.5233 3.28282C12.2744 2.53168 12.2744 1.31623 11.5233 0.565085C10.7658 -0.187313 9.53783 -0.188569 8.77789 0.562568V0.562669Z" fill="white"/>
+                            </svg>
+                            </button>
+                        <button class="sleep-page__next-btn"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.77789 0.562669L0.564298 8.71345C-0.188099 9.46459 -0.188099 10.6838 0.564298 11.4324L8.77789 19.5881C9.5366 20.3392 10.7646 20.3354 11.5233 19.5881C12.2744 18.8357 12.2744 17.6215 11.5233 16.8691L6.71818 12.1016H22.1324C23.2459 12.1016 24.1467 11.202 24.1467 10.0885C24.1467 8.97625 23.2459 8.07537 22.1324 8.07537H6.68919L11.5233 3.28282C12.2744 2.53168 12.2744 1.31623 11.5233 0.565085C10.7658 -0.187313 9.53783 -0.188569 8.77789 0.562568V0.562669Z" fill="white"/>
+                            </svg>
+                            </button>
+                    </div>
+                </div>
+                <div class="sleep-page__hammock"><img src="img/sleep/hammock.png" alt=""></div>
+                <div class="sleep-page__flower"><img src="img/sleep/flower.png" alt=""></div>
+                <div class="sleep-page__flower sleep-page__flower_big"><img src="img/sleep/flower-big.png" alt=""></div>
+            </div>
+            <div class="page__shop shop-page">
+                <div class="shop-page__title">Shop</div>
+                <div class="shop-page__shop-text"><img src="img/icons/shop.png" alt=""></div>
+                <div class="shop-page__slider swiper">
+                        <div class="shop-page__navigation">
+                            <button class="shop-page__prev-btn"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.77789 0.562669L0.564298 8.71345C-0.188099 9.46459 -0.188099 10.6838 0.564298 11.4324L8.77789 19.5881C9.5366 20.3392 10.7646 20.3354 11.5233 19.5881C12.2744 18.8357 12.2744 17.6215 11.5233 16.8691L6.71818 12.1016H22.1324C23.2459 12.1016 24.1467 11.202 24.1467 10.0885C24.1467 8.97625 23.2459 8.07537 22.1324 8.07537H6.68919L11.5233 3.28282C12.2744 2.53168 12.2744 1.31623 11.5233 0.565085C10.7658 -0.187313 9.53783 -0.188569 8.77789 0.562568V0.562669Z" fill="white"/>
+                                </svg>
+                                </button>
+                            <button class="shop-page__next-btn"><svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.77789 0.562669L0.564298 8.71345C-0.188099 9.46459 -0.188099 10.6838 0.564298 11.4324L8.77789 19.5881C9.5366 20.3392 10.7646 20.3354 11.5233 19.5881C12.2744 18.8357 12.2744 17.6215 11.5233 16.8691L6.71818 12.1016H22.1324C23.2459 12.1016 24.1467 11.202 24.1467 10.0885C24.1467 8.97625 23.2459 8.07537 22.1324 8.07537H6.68919L11.5233 3.28282C12.2744 2.53168 12.2744 1.31623 11.5233 0.565085C10.7658 -0.187313 9.53783 -0.188569 8.77789 0.562568V0.562669Z" fill="white"/>
+                                </svg>
+                                </button>
+                        </div>
+                        <div class="shop-page__wrapper swiper-wrapper">
+                            <div class="shop-page__slide shop-page__slide_1 swiper-slide shop-slide">
+                                <div class="shop-slide__content">
+                                    <div class="shop-slide__style">
+                                        <div class="shop-slide__declare declaration-block declaration-block_rating-bottom declaration-block_price">
+                                            <div class="declaration-block__declare">Style</div>
+                                            <div class="declaration-block__title">North Nugget TT Surfboard</div>
+                                            <div class="declaration-block__rating">
+                                                <div class="declaration-block__star">
+                                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="#4AF6CD" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M11 0L13.9225 6.97757L21.4616 7.60081L15.7287 12.5364L17.4656 19.8992L11 15.972L4.53436 19.8992L6.27135 12.5364L0.538379 7.60081L8.07753 6.97757L11 0Z" fill="#D9D9D9"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="declaration-block__star">
+                                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M11 0L13.9225 6.97757L21.4616 7.60081L15.7287 12.5364L17.4656 19.8992L11 15.972L4.53436 19.8992L6.27135 12.5364L0.538379 7.60081L8.07753 6.97757L11 0Z" fill="#D9D9D9"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="declaration-block__star">
+                                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M11 0L13.9225 6.97757L21.4616 7.60081L15.7287 12.5364L17.4656 19.8992L11 15.972L4.53436 19.8992L6.27135 12.5364L0.538379 7.60081L8.07753 6.97757L11 0Z" fill="#D9D9D9"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="declaration-block__star">
+                                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M11 0L13.9225 6.97757L21.4616 7.60081L15.7287 12.5364L17.4656 19.8992L11 15.972L4.53436 19.8992L6.27135 12.5364L0.538379 7.60081L8.07753 6.97757L11 0Z" fill="#D9D9D9"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="declaration-block__star">
+                                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M11 0L13.9225 6.97757L21.4616 7.60081L15.7287 12.5364L17.4656 19.8992L11 15.972L4.53436 19.8992L6.27135 12.5364L0.538379 7.60081L8.07753 6.97757L11 0Z" fill="#D9D9D9"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="declaration-block__price">$799</div>
+                                        </div>
+                                        <button class="shop-slide__btn"><img src="img/shop/btn.png" alt=""></button>
+                                    </div>
+                                    <div class="shop-slide__board">
+                                        <img src="img/shop/surfboard.png" alt="">
+                                    </div>
+                                    <div class="shop-slide__extra extra-block">
+                                        <div class="extra-block__title">Extras</div>
+                                        <div class="extra-block__items">
+                                            <div class="extra-block__item item-shop">
+                                                <div class="item-shop__image"><img src="img/shop/wax.png" alt=""></div>
+                                                <div class="item-shop__title">Sex Wax</div>
+                                                <div class="item-shop__price">$24.99</div>
+                                            </div>
+                                            <div class="extra-block__item item-shop">
+                                                <div class="item-shop__image"><img src="img/shop/bracelet.png" alt=""></div>
+                                                <div class="item-shop__title">Pura Vida</div>
+                                                <div class="item-shop__price">$27.99</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shop-slide__tip shop-slide__tip_1 tip" data-da=".shop-slide__board, 1099.98, first">
+                                        <div class="tip__sign"></div>
+                                        <div class="tip__line"></div>
+                                        <div class="tip__text">Double Concave with Vee Shape low point</div>
+                                    </div>
+                                    <div class="shop-slide__tip shop-slide__tip_2 tip" data-da=".shop-slide__board, 1099.98, first">
+                                        <div class="tip__sign"></div>
+                                        <div class="tip__line"></div>
+                                        <div class="tip__text">Double Concave with Vee Shape low point</div>
+                                    </div>
+                                    <div class="shop-slide__tip shop-slide__tip_3 tip" data-da=".shop-slide__board, 1099.98, first">
+                                        <div class="tip__sign"></div>
+                                        <div class="tip__line"></div>
+                                        <div class="tip__text">Double Concave with Vee Shape low point</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-page__slide shop-page__slide_1 swiper-slide shop-slide">
+                                <div class="shop-slide__content">
+                                    <div class="shop-slide__style">
+                                        <div class="shop-slide__declare declaration-block declaration-block_rating-bottom declaration-block_price">
+                                            <div class="declaration-block__declare">Style</div>
+                                            <div class="declaration-block__title">North Nugget TT Surfboard</div>
+                                            <div class="declaration-block__rating">
+                                                <div class="declaration-block__star">
+                                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="#4AF6CD" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M11 0L13.9225 6.97757L21.4616 7.60081L15.7287 12.5364L17.4656 19.8992L11 15.972L4.53436 19.8992L6.27135 12.5364L0.538379 7.60081L8.07753 6.97757L11 0Z" fill="#D9D9D9"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="declaration-block__star">
+                                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M11 0L13.9225 6.97757L21.4616 7.60081L15.7287 12.5364L17.4656 19.8992L11 15.972L4.53436 19.8992L6.27135 12.5364L0.538379 7.60081L8.07753 6.97757L11 0Z" fill="#D9D9D9"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="declaration-block__star">
+                                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M11 0L13.9225 6.97757L21.4616 7.60081L15.7287 12.5364L17.4656 19.8992L11 15.972L4.53436 19.8992L6.27135 12.5364L0.538379 7.60081L8.07753 6.97757L11 0Z" fill="#D9D9D9"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="declaration-block__star">
+                                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M11 0L13.9225 6.97757L21.4616 7.60081L15.7287 12.5364L17.4656 19.8992L11 15.972L4.53436 19.8992L6.27135 12.5364L0.538379 7.60081L8.07753 6.97757L11 0Z" fill="#D9D9D9"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="declaration-block__star">
+                                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M11 0L13.9225 6.97757L21.4616 7.60081L15.7287 12.5364L17.4656 19.8992L11 15.972L4.53436 19.8992L6.27135 12.5364L0.538379 7.60081L8.07753 6.97757L11 0Z" fill="#D9D9D9"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="declaration-block__price">$799</div>
+                                        </div>
+                                        <button class="shop-slide__btn"><img src="img/shop/btn.png" alt=""></button>
+                                    </div>
+                                    <div class="shop-slide__board">
+                                        <img src="img/shop/surfboard.png" alt="">
+                                        <div class="shop-slide__tippy"></div>
+                                        <div class="shop-slide__tippy"></div>
+                                        <div class="shop-slide__tippy"></div>
+                                    </div>
+                                    <div class="shop-slide__extra extra-block">
+                                        <div class="extra-block__title">Extras</div>
+                                        <div class="extra-block__items">
+                                            <div class="extra-block__item item-shop">
+                                                <div class="item-shop__image"><img src="img/shop/wax.png" alt=""></div>
+                                                <div class="item-shop__title">Sex Wax</div>
+                                                <div class="item-shop__price">$24.99</div>
+                                            </div>
+                                            <div class="extra-block__item item-shop">
+                                                <div class="item-shop__image"><img src="img/shop/bracelet.png" alt=""></div>
+                                                <div class="item-shop__title">Pura Vida</div>
+                                                <div class="item-shop__price">$27.99</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="page__line page__line_1"></div>
+            <div class="page__line page__line_2"></div>
+            <div class="page__line page__line_3"></div>
+        </div>
+    </main>
+
+<footer class="footer">
+    <div class="footer__btn"><img src="img/footer/footer.png" alt=""></div>
+    <div class="footer__text">© Go-Surf 2018. All Rights Reserved.</div>
+</footer>
+    </div>
+<script src="./js/app.min.js"></script>
+</body>
+</html>
